@@ -13,13 +13,10 @@ const Login = () => {
             setMessage('Todos los campos son obligatorios.');
             return;
         }
-
         if (password.length < 6) {
-            setMessage('La contraseña debe tener al menos 6 caracteres.');
+            setMessage('La contraseña debe contener al menos 6 caracteres.');
             return;
         }
-
-        // Aquí podrías añadir lógica adicional para validar el email y password
         setMessage('¡Inicio de sesión exitoso!');
     };
 
